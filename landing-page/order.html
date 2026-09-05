@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>สั่งซื้อสินค้า | Noir Muse</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .order-container {
+      max-width: 600px;
+      margin: 3rem auto;
+      padding: 2.5rem;
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-color);
+    }
+
+    .order-title {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+    }
+
+    .order-subtitle {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin-bottom: 2rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 0.5rem;
+      color: var(--text-primary);
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.8rem 1rem;
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      border: 1px solid var(--border-color);
+      background-color: var(--bg-color);
+      color: var(--text-primary);
+      outline: none;
+      transition: border-color 0.3s ease;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      border-color: var(--accent-gold);
+    }
+
+    .form-group input[readonly] {
+      background-color: #f4efe6;
+      color: var(--text-muted);
+      cursor: not-allowed;
+    }
+
+    .btn-submit {
+      width: 100%;
+      padding: 1rem;
+      margin-top: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      border-top: 1px solid var(--border-color);
+      margin-top: 4rem;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo">Noir Muse</a>
+      <ul class="nav-links">
+        <li><a href="index.html">หน้าแรก</a></li>
+        <li><a href="product.html">สินค้าทั้งหมด</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="order-container">
+      <h1 class="order-title">Checkout</h1>
+      <p class="order-subtitle">กรอกข้อมูลเพื่อยืนยันการสั่งซื้อ</p>
+      
+      <form id="orderForm">
+        <div class="form-group">
+          <label for="style">สไตล์ที่เลือก</label>
+          <input type="text" id="style" name="style" readonly required>
+        </div>
+
+        <div class="form-group">
+          <label for="total">จำนวนเงินรวม (บาท)</label>
+          <input type="text" id="total" name="total" readonly required>
+        </div>
+
+        <div class="form-group">
+          <label for="customerName">ชื่อลูกค้า *</label>
+          <input type="text" id="customerName" name="customerName" placeholder="ระบุชื่อและนามสกุล" required>
+        </div>
+
+        <div class="form-group">
+          <label for="contact">เบอร์โทร / Line *</label>
+          <input type="text" id="contact" name="contact" placeholder="ระบุเบอร์โทรศัพท์ หรือ Line ID" required>
+        </div>
+
+        <div class="form-group">
+          <label for="note">หมายเหตุ</label>
+          <textarea id="note" name="note" rows="3" placeholder="ระบุที่อยู่จัดส่ง หรือรายละเอียดเพิ่มเติม"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-submit">ยืนยันสั่งซื้อ</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; Noir Muse. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
