@@ -1,26 +1,26 @@
 [
   {
-    "id": 1,
+    "id": "gothic-muse",
     "name": "Gothic Muse",
     "style": "gothic",
     "price": 259,
-    "image": "images/gothic.jpg.jpg",
-    "description": "ลุคลึกลับ มีเสน่ห์ น่าค้นหา"
+    "image": "images/gothic.jpg",
+    "description": "ลุคลึกลับ มีเสน่ห์ น่าค้นหา ด้วยโทนสโมกกี้ ดำ ม่วงเข้ม และชิมเมอร์เงิน"
   },
   {
-    "id": 2,
+    "id": "lolita-muse",
     "name": "Lolita Muse",
     "style": "lolita",
     "price": 259,
-    "image": "images/lolita.jpg.jpg",
-    "description": "ลุคหวานละมุน น่ารัก อ่อนเยาว์"
+    "image": "images/lolita.jpg",
+    "description": "ลุคหวานละมุน น่ารัก อ่อนเยาว์ ด้วยโทนชมพูพาสเทล พีช และชิมเมอร์แชมเปญ"
   },
   {
-    "id": 3,
+    "id": "gal-muse",
     "name": "Gal Muse",
     "style": "gal",
     "price": 259,
-    "image": "images/gal.jpg.jpg",
-    "description": "ลุคเฉี่ยว แซ่บ มั่นใจ"
+    "image": "images/gal.jpg",
+    "description": "ลุคเฉี่ยว แซ่บ มั่นใจ ด้วยโทนน้ำตาลทอง บรอนซ์ และสีฟ้าป๊อปสุดโดดเด่น"
   }
 ]
