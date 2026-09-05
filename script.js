@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
         note: document.getElementById('note')?.value || ''
       };
 
-      fetch('https://script.google.com/macros/s/AKfycbxCn73O_-1GnBnkpJ4Xvi5328bGx8IRfZHYt9BuAAXeJTunpPZSZGIODV5mh7UyMNyx/exec', {
+      fetch('https://script.google.com/macros/s/AKfycbzMD5wew0NhDk8hWX30QPGlqftlIDx0XkV5Z_eeACDp0P1OxaSeqxWLRf_kZf31tWh3ow/exec', {
         method: 'POST',
         body: JSON.stringify(payload)
       })
